@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South2Sea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/feature.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="picture/favo.ico">
+</head>
+<body>
+    <!-- nav -->
+    <header class="hero-banner position-relative">
+          <nav class="navbar navbar-expand-lg rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand d-sm-none" href="index.html"><img src="picture/logo-white.png" alt="logo" class="logo"></a>
+                <button class="btn btn-search d-sm-none" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                    <i class="fi fi-rr-search"></i>
+                </button>
+                <button class="btn btn-menu d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fi fi-rr-menu-burger"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse position-relative" id="navbarsExample09">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 nav-text">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active-link" href="#">BOOKING</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">LOCATIONS</a>
+                            </li>
+                            <li class="nav-item nav-logo d-none d-sm-block">
+                            <a class="nav-link" href="#"><img src="picture/logo-white.png" alt="logo" class="logo"></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                            <div class="icon d-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fi fi-rr-shopping-cart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fi fi-rr-search"></i></a>
+                                </li>
+                                <li class="nav-item nav-item-end">
+                                    <a class="nav-link" href="#"><i class="fi fi-rr-user"></i></a>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="line-left d-none d-sm-block"></div>
+                        <div class="line-right d-none d-sm-block"></div>
+                </div>
+            </div>
+          </nav>
+            <div class="text position-relative z-1 d-flex justify-content-center">
+                <!-- desktop -->
+                <h1 class="text-center text-white pe-5 banner-title d-none d-sm-block">ยินดีต้อนรับเข้าสู่ SOUTH2SEA</h1>
+                <!-- mobile -->
+                <h1 class="text-center text-white ps-3 banner-title d-sm-none">ยินดีต้อนรับเข้าสู่ SOUTH2SEA</h1>
+            </div>
+    </header>
+
+    <section class="search d-flex justify-content-center position-relative z-1">
+        <div class="box-search">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 border-end mb-3" id="box1">
+                        <div class="search-icon d-flex">
+                            <div class="icon-box position-relative"><i class="fi fi-rr-marker position-absolute"></i></div>
+                            <h1 class="search-title">Location</h1>
+                        </div>
+                        <div class="box-input d-flex">
+                            <i class="fi fi-rr-search"></i>
+                            <input type="text" name="" id="" class="input" placeholder="ค้นหาสถานที่ท่องเที่ยว" value="ภูเก็ต, ป่าตอง">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 border-end mb-3" id="box2">
+                        <div class="search-icon d-flex">
+                            <div class="icon-box position-relative"><i class="fi fi-rr-clock-three position-absolute"></i></div>
+                            <h1 class="search-title">Date</h1>
+                        </div>
+                        <div class="box-input d-flex">
+                            <input type="date" id="start" name="trip-start" class="input" value="2023-10-10" data-date-format="DD MMMM YYYY"/>
+                            &nbsp;&nbsp;&nbsp;-
+                            <input type="date" id="start" name="trip-start" class="input" value="2023-10-12" data-date-format="DD MMMM YYYY"/> 
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="search-icon d-flex">
+                            <div class="icon-box position-relative"><i class="fi fi-rr-user position-absolute"></i></div>
+                            <h1 class="search-title">Guests</h1>
+                        </div>
+                        <div class="box-range d-flex">
+                            <button id="minus" class="btn-add" onclick="minus()"><i class="fi fi-rr-minus"></i></button>
+                            <input type="number" name="" class="input" id="number" min="0" value="2">
+                            <button id="plus" class="btn-add" onclick="plus()"><i class="fi fi-rr-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn-find"><i class="fi fi-rr-search" style="font-size: 21px;"></i> ค้นหา</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- result -->
+    <section class="result">
+        <!-- desktop -->
+        <div class="container d-sm-block d-none">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-5 result-text">
+                        <h1>ผลการค้นหา</h1>
+                        <button class="btn-result"><i class="fi fi-rr-filter"></i> Filter</button>
+                        <p>ดูทั้งหมด</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4 img-card">
+                                <img src="picture/home/foto.jpg" alt="" class="">
+                            </div>
+                            <div class="col-8 position-relative card-detail">
+                                <p class="text-type">Hotel</p>
+                                <p class="text-name">Le Meridien Phuket<br>Beach Resort</p>
+                                <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                <h1 class="func-price position-absolute">THB 5,600 ต่อคืน</h1>
+                                <p class="func-distance position-absolute"><i class="fa-solid fa-heart"></i></p>
+                                <button class="func-btn rounded-5 position-absolute">จอง</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4 img-card">
+                                <img src="picture/home/dara.jpg">
+                            </div>
+                            <div class="col-8 position-relative card-detail">
+                                <p class="text-type">Hotel</p>
+                                <p class="text-name">On the hill karon<br>resort</p>
+                                <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                <h1 class="func-price position-absolute">THB 1,424 ต่อคืน</h1>
+                                <p class="func-distance position-absolute"><i class="fa-regular fa-heart"></i></p>
+                                <button class="func-btn rounded-5 position-absolute">จอง</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4 img-card">
+                                <img src="picture/home/malabar.jpg">
+                            </div>
+                            <div class="col-8 position-relative card-detail">
+                                <p class="text-type">Hotel</p>
+                                <p class="text-name">Centara Villas<br>
+                                    Phuket</p>
+                                <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                <h1 class="func-price position-absolute">THB 5,102 ต่อคืน</h1>
+                                <p class="func-distance position-absolute"><i class="fa-regular fa-heart"></i></p>
+                                <button class="func-btn rounded-5 position-absolute">จอง</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-4 img-card">
+                                <img src="picture/home/proud.jpg">
+                            </div>
+                            <div class="col-8 position-relative card-detail">
+                                <p class="text-type">Hotel</p>
+                                <p class="text-name">Nipa Resort<br>
+                                    Patong Beach</p>
+                                <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                <h1 class="func-price position-absolute">THB 2,428 ต่อคืน</h1>
+                                <p class="func-distance position-absolute"><i class="fa-regular fa-heart"></i></p>
+                                <button class="func-btn rounded-5 position-absolute">จอง</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
+        <div class="container d-sm-none">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-5 result-text">
+                        <h1>ผลการค้นหา</h1>
+                        <button class="btn-result"><i class="fi fi-rr-filter"></i> Filter</button>
+                        <p>ดูทั้งหมด</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ms-2">
+                <div class="card position-relative">
+                    <img src="picture/home/foto.jpg">
+                    <p class="text-type">Hotel</p>
+                    <p class="text-name">FOTO HOTEL<br>PHUKET</p>
+                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                    <h1 class="func-price position-absolute">THB 6,800 ต่อคืน</h1>
+                    <p class="func-distance position-absolute"><i class="fa-solid fa-heart"></i></p>
+                    <button class="func-btn rounded-5 position-absolute">จอง</button>
+                </div>
+                <div class="card position-relative">
+                    <img src="picture/home/dara.jpg">
+                    <p class="text-type">Hotel</p>
+                    <p class="text-name">DARA HOTEL</p>
+                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                    <h1 class="func-price position-absolute">THB 1,424 ต่อคืน</h1>
+                    <p class="func-distance position-absolute"><i class="fa-regular fa-heart"></i></p>
+                    <button class="func-btn rounded-5 position-absolute">จอง</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all">
+        <section class="destination">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <p>จุดหมายปลายทาง</p>
+                        <h1>ออกจากเมืองใหญ่และ<br>
+                            ไปพบเจอกับธรรมชาติในภาคใต้</h1>
+                    </div>
+                    <div class="col-md-4 text-right d-sm-block d-none">
+                        <p style="color: #838383;">ทางเราขอเสนอจุดหมายปลายทางต่างๆให้ท่าน<br>
+                            เพื่อเปิดประสบการณ์ใหม่ๆแก่ท่าน</p>
+                        <br>
+                        <h3 class="d-flex align-items-center">ดูเพิ่มเติม &nbsp;&nbsp;<i class="fi fi-rr-arrow-right"></i></h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-6">
+                        <div class="desbox despic-1 position-relative">
+                                <p class="des-title position-relative z-1">KRABI</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="desbox despic-2 position-relative">
+                            <p class="des-title position-relative z-1">PHUKET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-block d-none">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-md-4">
+                            <div class="desbox-sm despic-3 position-relative">
+                                <p class="des-title position-relative z-1">SURAT THANI</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="desbox-sm despic-4 position-relative">
+                                <p class="des-title position-relative z-1">SONGKLA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="desbox-sm despic-5 position-relative">
+                                <p class="des-title position-relative z-1">PHANG NGA</p>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="d-sm-none">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-12">
+                            <div class="desbox-sm despic-3 position-relative">
+                                <p class="des-title position-relative z-1">SONGKLA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center d-sm-none">
+                <button class="btn-showmore mt-5">SHOW MORE</button>
+            </div>
+        </section>
+
+        <!--deal-->
+        <section class="deal mt-5">
+            <div class="container">
+                <div class="d-sm-block d-none">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="deal-text-box position-relative" style="border: 1px solid black;">
+                                <h4 class="offer position-relative z-1">ข้อเสนอสำหรับคุณ</h4>
+                                <h1 class="deal-name position-relative z-1">ปลดล็อคดีลการท่องเที่ยวสุดพิเศษ</h1>
+                                <h6 class="details position-relative z-1">เมื่อคุณทำการจองตอนนี้ เรามีดีลพิเศษมากมายสำหรับคุณโดยเฉพาะ จะมัวอะไรอยู่ล่ะ<br>
+                                    จองเลย</h6>
+                                <div class="text-left">
+                                    <button class="btn-more2 rounded-5">SHOW MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="dealbox deal1 position-relative">
+                                <p class="title2 position-relative z-1">MAI MORN RESORT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-md-5 col-sm-6">
+                            <div class="dealbox deal2 position-relative">
+                                <p class="title2 position-relative z-1">BLUE CARINA HOTEL</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-6">
+                            <div class="dealbox deal3 position-relative">
+                                <p class="title2 position-relative z-1">THE OCEANIC SPORTEL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="d-sm-none">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="deal-text-box position-relative" style="border: 1px solid black;">
+                                <h4 class="offer position-relative z-1">ข้อเสนอสำหรับคุณ</h4>
+                                <h1 class="deal-name position-relative z-1">ปลดล็อคดีลการท่องเที่ยวสุดพิเศษ</h1>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="dealbox deal1 position-relative">
+                                <p class="title2 position-relative z-1">MAI MORN RESORT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-sm-12">
+                            <div class="dealbox deal2 position-relative">
+                                <p class="title2 position-relative z-1">BLUE CARINA HOTEL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-showmore mt-5">SHOW MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--For you-->
+        <section class="foryou">
+            <!-- desktop -->
+            <div class="container d-sm-block d-none">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex mb-5 result-text">
+                            <h1>โรงแรมแนะนำใกล้คุณ</h1>
+                            <button class="btn-result"><i class="fi fi-rr-filter"></i> Filter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 img-card">
+                                    <img src="picture/home/foto.jpg" alt="" class="">
+                                </div>
+                                <div class="col-8 position-relative card-detail">
+                                    <p class="text-type">Hotel</p>
+                                    <p class="text-name">FOTO HOTEL<br>PHUKET</p>
+                                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                    <h1 class="func-price position-absolute">THB 6,800 ต่อคืน</h1>
+                                    <p class="func-distance position-absolute">1.5 KM</p>
+                                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 img-card">
+                                    <img src="picture/home/dara.jpg">
+                                </div>
+                                <div class="col-8 position-relative card-detail">
+                                    <p class="text-type">Hotel</p>
+                                    <p class="text-name">On the hill karon<br>resort</p>
+                                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                    <h1 class="func-price position-absolute">THB 1,424 ต่อคืน</h1>
+                                    <p class="func-distance position-absolute">2.0 KM</p>
+                                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 img-card">
+                                    <img src="picture/home/malabar.jpg">
+                                </div>
+                                <div class="col-8 position-relative card-detail">
+                                    <p class="text-type">Hotel</p>
+                                    <p class="text-name">MALABAR<br>
+                                        POOL VILLA PHUKET</p>
+                                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                    <h1 class="func-price position-absolute">THB 4,455 ต่อคืน</h1>
+                                    <p class="func-distance position-absolute">4.5 KM</p>
+                                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 img-card">
+                                    <img src="picture/home/proud.jpg">
+                                </div>
+                                <div class="col-8 position-relative card-detail">
+                                    <p class="text-type">Hotel</p>
+                                    <p class="text-name">DARA HOTEL</p>
+                                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                                    <h1 class="func-price position-absolute">THB 6,800 ต่อคืน</h1>
+                                    <p class="func-distance position-absolute">2.0 KM</p>
+                                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center d-sm-block d-none">
+                <button class="btn-more rounded-5">SHOW MORE</button>
+            </div>
+            <!-- mobile -->
+        <div class="container d-sm-none">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-5 result-text">
+                        <h1>ผลการค้นหา</h1>
+                        <button class="btn-result"><i class="fi fi-rr-filter"></i> Filter</button>
+                        <p>ดูทั้งหมด</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ms-2">
+                <div class="card position-relative">
+                    <img src="picture/home/foto.jpg">
+                    <p class="text-type">Hotel</p>
+                    <p class="text-name">FOTO HOTEL<br>PHUKET</p>
+                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                    <h1 class="func-price position-absolute">THB 6,800 ต่อคืน</h1>
+                    <p class="func-distance position-absolute">1.5 KM</p>
+                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                </div>
+                <div class="card position-relative">
+                    <img src="picture/home/dara.jpg">
+                    <p class="text-type">Hotel</p>
+                    <p class="text-name">DARA HOTEL</p>
+                    <p class="function position-relative"><i class="fi fi-rr-bed"></i> <span class="function-text position-absolute">2</span></p>
+                    <p class="function position-relative"><i class="fa-solid fa-shower"></i> <span class="function-text position-absolute">1</span></p>
+                    <p class="function position-relative"><i class="fi fi-rr-wifi"></i> <span class="function-text position-absolute">free wifi</span></p>
+                    <h1 class="func-price position-absolute">THB 1,424 ต่อคืน</h1>
+                    <p class="func-distance position-absolute">2.0 KM</p>
+                    <button class="func-btn rounded-5 position-absolute">รายละเอียด</button>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn-showmore mt-3">SHOW MORE</button>
+            </div>
+        </div>
+        </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="position-relative">
+        <div class="footer-logo justify-content-center text-center d-none d-sm-block">
+            <img src="picture/footer-logo.png" class="ft-logo">
+        </div>
+        <div class="booking d-none d-sm-block">
+            <p class="ft-title">BOOKING</p>
+            <p class="ft-text">Destination</p>
+            <p class="ft-text">Exclusive</p>
+            <p class="ft-text">Recommended</p>
+        </div>
+
+        <div class="service-online position-absolute d-none d-sm-block">
+            <p class="ft">บริการออนไลน์</p>
+            <p class="ft-text">About us</p>
+            <p class="ft-text">FAQ</p>
+            <p class="ft-text">Contact</p>
+            <p class="ft-text">Privacy Policy</p>
+            <p class="ft-text">Cookie management</p>
+        </div>
+
+        <div class="ft-search position-absolute d-none d-sm-block">
+            <p class="ft-title mb-3">SEARCH</p>
+            <div class="d-flex box mb-4">
+                <input type="text" class="input-ft" placeholder="What are you looking for?">
+                <i class="fi fi-rr-search"></i>
+            </div>
+            <p class="ft-title mb-3">LANGUAGE</p>
+            <div class="d-flex box">
+                <select class="input-select">
+                    <option>Thai</option>
+                    <option>English</option>
+                    <option>中国</option>
+                    <option>भारत</option>
+                </select>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="d-none d-sm-block">
+            <div class="ft-ft d-flex justify-content-between">
+                <p class="footer-text"><i class="fi fi-rr-globe" style="margin-top: 5px;"></i> South2sea.com</p>
+                <div class="ft-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
+        <div class="d-sm-none">
+            <img src="./picture/footer-logo.png" class="footer-logo" alt="" srcset="">
+            <div class="ft-search">
+                <p class="ft-title mb-1">SEARCH</p>
+                <div class="d-flex box mb-3">
+                    <input type="text" class="input-ft" placeholder="What are you looking for?">
+                    <i class="fi fi-rr-search"></i>
+                </div>
+                <p class="ft-title mb-1">LANGUAGE</p>
+                <select class="input-select mb-3">
+                        <option>Thai</option>
+                        <option>English</option>
+                        <option>中国</option>
+                        <option>भारत</option>
+                </select>
+
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fa-solid fa-circle-plus"></i> Booking</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fi fi-rr-marker"></i> Locations</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fi fi-rr-book-user"></i> About us</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="ft-icon d-flex justify-content-center">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+                <p style="font-size: 9px; margin-top: 13px;"><i class="fa-regular fa-copyright"></i> <span style="font-size: 6px;">South2sea.com</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+    <script>
+        function plus() {
+            var number = document.getElementById('number').value;
+            document.getElementById('number').value = ++number;
+        }
+        
+        function minus() {
+            var number = document.getElementById('number').value;
+            if(number >= 0 && number != 0){
+                document.getElementById('number').value = --number;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+        var funcDistanceElements = document.querySelectorAll(".func-distance");
+
+        funcDistanceElements.forEach(function(element) {
+            element.addEventListener("click", function() {
+            var heartIcon = element.querySelector("i");
+
+            if (heartIcon.classList.contains("fa-regular")) {
+                heartIcon.classList.remove("fa-regular");
+                heartIcon.classList.add("fa-solid");
+            } else {
+                heartIcon.classList.remove("fa-solid");
+                heartIcon.classList.add("fa-regular");
+            }
+            });
+        });
+        });
+        function updateClasses() {
+            const box1 = document.getElementById('box1');
+            const box2 = document.getElementById('box2');
+
+            if (window.innerWidth <= 430) {
+                box1.classList.remove('border-end');
+                box1.classList.add('border-bottom');
+                box2.classList.remove('border-end');
+                box2.classList.add('border-bottom');
+            } else {
+                box1.classList.remove('border-bottom');
+                box1.classList.add('border-end');
+                box2.classList.remove('border-bottom');
+                box2.classList.add('border-end');
+            }
+        }
+        window.addEventListener('resize', updateClasses);
+        window.addEventListener('load', updateClasses);
+    </script>
+</html>

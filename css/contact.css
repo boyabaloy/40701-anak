@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'Arial-Rounded-MT'; /* Give your font a name */
+    src: url('fonts/Arial-Rounded-MT.Ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial-Rounded-MT-Bold'; /* Give your font a name */
+    src: url('fonts/ARLRDBD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kanit'; /* Give your font a name */
+    src: url('fonts/Kanit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'kanit',sans-serif;
+}
+
+.hero-banner{
+    position: relative;
+    max-width: 100%;
+    height: 23.75rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* nav */
+.navbar{
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+.nav-link{
+    color: #071952;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: #088395;
+    transition: 0.5s;
+}
+
+.active-link{
+    color: #088395;
+}
+
+.nav-link i{
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 8rem;
+}
+
+.navbar-nav .nav-item-end{
+    margin-right: 0;
+}
+
+.icon .nav-item{
+    margin-right: 2rem;
+}
+
+.navbar-nav .nav-logo{
+    margin-top: -3rem;
+    margin-left: 2.4rem;
+}
+
+.nav-item .nav-link .logo{
+    width: 292px;
+    height: 206px;
+}
+
+.navbar-brand .logo{
+    width: 165px;
+    height: 116px;
+    margin-left: -2rem;
+}
+
+.line-left{
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 49.4rem;
+    height: 2px;
+    background: #071952;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.line-right{
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: 57rem;
+    height: 2px;
+    background: #071952;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-menu .fi-rr-menu-burger{
+    font-size: 1.5rem;
+    color: #071952;
+}
+
+.btn-search {
+    font-size: 1.5rem;
+    color: #071952;
+    margin-right: -6rem;
+}
+
+/* banner */
+.banner-items{
+    margin-top: -2.5rem;
+    margin-left: 5rem;
+    width: 100%;
+}
+.banner-title{
+    font-size: 2rem;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+}
+.banner-text{
+    font-family: 'Kanit',sans-serif;
+    font-size: 20px;
+}
+.banner-btn{
+    width: 684px;
+    height: 45px;
+    background-color: #071952;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 200px;
+    padding-left: 80px;
+    
+}
+.banner-btn::placeholder{
+    color: rgba(255, 255, 255, 0.63);;
+}
+.box-input i{
+    margin-top: 11px;
+    font-size: 18px;
+    color: white;
+    margin-left: 2rem;
+}
+
+.banner-items img{
+    top: -6rem;
+    right: 5rem;
+    width: 428px;
+    height: 330px;
+    text-align: left;
+}
+.all{
+    width: 100%;
+    height: 1983px;
+    background-image: url(../picture/feature/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 90%;
+}
+/* FAQs */
+.faqs{
+    width: 100%;
+}
+.faqs .titleFAQs{
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+.faq-box-head{
+    width: 100%;
+    height: 120px;
+    background-color: #7FBCC3;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    padding-top: 10px;
+    outline: none;
+    border: none;
+}
+.faq-box-head i{
+    font-size: 50px;
+}
+.faq-box-head p{
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: 'kanit';
+}
+
+.ant-bg{
+    background-color: #35A29F;
+}
+.faq-main{
+    width: 100%;
+    height: 752px;
+    border-radius: 32px;
+    background-color: #7FBCC3;
+    overflow: hidden;
+}
+.faq-main .container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.faq-main .container::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+.faq-main .container::-webkit-scrollbar-track {
+    background-color: #7FBCC3;
+    border-radius: 100px;
+  }
+.faq-main .container::-webkit-scrollbar-thumb{
+    background-color: #071952;
+    border-radius: 100px;
+}
+.faq-main .container::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(33, 51, 110);
+}
+.faq-title{
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    margin-left: 3rem;
+}
+.boxfaq{
+    width: 100%;
+    min-height: 44px;
+    background-color: #fff;
+    border-radius: 200px;
+    color: #000;
+    padding-left: 50px;
+    cursor: pointer;
+    font-family: 'kanit';
+    font-size: 16px;
+    font-weight: 400;
+}
+.boxfaq p{
+    margin-top: 1rem;
+}
+.faq-content{
+    display: none;
+    margin-left: 0rem;
+    background-color: #fff;
+}
+#faq-booking{
+    padding: 30px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* contact */
+.contact{
+    width: 100%;
+}
+.contact-box{
+    width: 100%;
+    height: 512px;
+    background-color: #088395;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ct-bg{
+    background-color: #7FBCC3;
+}
+.contact-title{
+    font-size: 2rem;
+
+}
+.contact-text{
+    padding: 0 2rem;
+    margin-top: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.contact-box img{
+    margin-top: -3rem;
+    width: 530px;
+    height: 372px;
+}
+.ct-input{
+    width: 100%;
+    height: 34px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    padding-left: 30px;
+}
+.ct-input-lg{
+    width: 100%;
+    height: 34px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    height: 328px;
+    resize: none;
+}
+.ct-detail{
+    width: 100%;
+    height: 312px;
+    background-color: #088395;
+    border-radius: 20px;
+    color: #000;
+    padding-top: 2rem;
+}
+.detail-box{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 200px;
+}
+.ct-detail i{
+    font-size: 50px;
+}
+.detail-title{
+    font-size: 20px;
+}
+.detail-text{
+    font-size: 16px;
+}
+
+.detail-bg1{
+    background-color: #35A29F;
+}
+.detail-bg2{
+    background-color: #7FBCC3;
+}
+.detail-btn{
+    width: 136px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background-color: #F2F7A1;
+    border-radius: 50px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 15px;
+}
+.detail-btn:hover{
+    background-color: #e2e95f;
+}
+/* FOOTER */
+footer{
+    max-width: 100%;
+    height: 36.81rem;
+    background-color: #071952;
+    color: #fff;
+    padding: 0 110px;
+}
+
+.footer-logo .ft-logo{
+    width: 30.31rem ;
+    height: 21.44rem;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.booking{
+    margin-top: -80px;
+}
+
+.ft-title{
+    font-size: 15px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+}
+
+.ft-text{
+    font-size: 15px;
+    font-family: 'kanit', sans-serif;
+    cursor: pointer;
+}
+
+.service-online{
+    top: 227px;
+    left: 400px;
+}
+
+.ft-line{
+    width: 338px;
+    height: 1px;
+    background-color: #ababab;
+}
+
+.ft-search{
+    top: 227px;
+    right: 110px;
+}
+
+.input-ft{
+    width: 336px;
+    height: 29px;
+    background-color: #071952;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'kanit', sans-serif;
+    color: white;
+}
+
+.input-select{
+    width: 336px;
+    height: 29px;
+    background-color: #071952;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'kanit', sans-serif;
+    color: #848484;
+}
+
+.box i{
+    margin-left: -25px;
+}
+
+.ft-ft{
+    height: 99px;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 2.5rem 0;
+}
+
+.ft-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    /* navbar */
+    .nav-link{
+        color: #071952;
+    }
+    .hero-banner {
+      height: 28.8125rem;
+    }
+    .navbar{
+        margin-top: 10px;
+    }
+    .banner-title{
+        font-size: 20px;
+        margin-top: 16rem;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+    .hero-banner .button{
+        margin-left: 1rem;
+    }
+
+    /* banner */
+    .banner-items{
+        text-align: center;
+        margin-top: -15rem;
+        margin-left: 0;
+    }
+
+    .banner-title{
+        font-size: 32px;
+    }
+
+    .banner-text{
+        font-size: 16px;
+    }
+
+    .banner-btn{
+        width: 275px;
+        height: 37px;
+    }
+
+    .box-input i{
+        margin-top: 8px;
+    }
+
+    .banner-items img{
+        top: 4.5rem;
+        right: -3rem;
+        width: 397px;
+        height: 254px;
+        opacity: 50%;
+        z-index: 0;
+    }
+    /* all */
+    .all{
+        height: 2711px;
+        background-image: url(../picture/feature/cover-sm.png);
+        background-size: cover;
+        background-position: center left;
+    }
+    /* FAQs */
+    .faqs{
+        margin-top: -8.2rem;
+    }
+    .faq-box-head{
+        height: 43px;
+        padding-top: 3px;
+    }
+    .faq-box-head i{
+        font-size: 20px;
+    }
+    .faq-box-head p{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .faqs .container-fluid{
+        width: 100%;
+        height: 767px;
+        background: #7FBCC3;
+        margin-top: 0px;
+    }
+    .faq-title{
+        margin-left: 10px;
+        color: #071952;
+    }
+    .boxfaq{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    /* contact */
+    .contact-box{
+        height: 450px;
+    }
+    .contact-title{
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    .contact-text{
+        font-size: 16px;
+    }
+    .contact-box img{
+        margin-top: -3rem;
+        width: 382px;
+        height: 268px;
+    }
+    .ct-input{
+        height: 28px;
+        font-size: 14px;
+    }
+    .ct-input-lg{
+        height: 269px;
+    }
+    .ct-detail{
+        height: 270px;
+        padding-top: 0.5rem;
+    }
+    .detail-bt{
+        margin-top: 10px;
+    }
+    /* footer */
+    footer{
+        height: 450px;
+        padding: 0 2rem;
+    }
+    .footer-logo{
+        width: 252px;
+        height: 178px;
+        margin-top: -8rem;
+        margin-left: -2rem;
+    }
+    .ft-search{
+        margin-top: -3rem;
+    }
+    .input-select{
+        width: 100%;
+        height: 24px;
+    }
+    .input-ft{
+        width: 100%;
+        height: 24px;
+    }
+    .drop-text{
+        width: 100%;
+        height: 24px;
+        border-bottom: 1px solid white;
+        font-size: 12px;
+    }
+    .select-text{
+        cursor: pointer;
+    }
+    .select-text i{
+        font-size: 10px;
+        right: 4px;
+        top: 4px;
+    }
+    .ft-icon{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid white;
+    }
+    .ft-icon i{
+        margin-top: 7px;
+    }
+    .ft-icon .fa-facebook{
+        margin-right: 1rem;
+    }
+    .ft-icon .fa-instagram{
+        margin-right: 1rem;
+    }
+    .ft-icon .fa-youtube{
+        margin-right: 1rem;
+    }
+  }

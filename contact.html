@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South2Sea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="picture/favo.ico">
+</head>
+<body>
+    
+    <header class="hero-banner">
+          <nav class="navbar navbar-expand-lg rounded" aria-label="Eleventh navbar example">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-sm-none" href="index.html"><img src="picture/logo-nav.png" alt="logo" class="logo"></a>
+                    <button class="btn btn-search d-sm-none" type="button" data-bs-toggle="collapse" aria-expanded="false">
+                        <i class="fi fi-rr-search"></i>
+                    </button>
+                    <button class="btn btn-menu d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fi fi-rr-menu-burger"></i>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse position-relative" id="navbarsExample09">
+                            <ul class="navbar-nav m-auto mb-lg-0 nav-text">
+                                <li class="nav-item">
+                                    <a class="nav-link active-link" aria-current="page" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="feature.html">BOOKING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">LOCATIONS</a>
+                                </li>
+                                <li class="nav-item nav-logo d-none d-sm-block">
+                                    <a class="nav-link" href="#"><img src="picture/logo-nav.png" alt="logo" class="logo"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">CONTACT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
+                                <div class="icon d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fi fi-rr-shopping-cart"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fi fi-rr-search"></i></a>
+                                    </li>
+                                    <li class="nav-item nav-item-end">
+                                        <a class="nav-link" href="#"><i class="fi fi-rr-user"></i></a>
+                                    </li>
+                                </div>
+                            </ul>
+                            <div class="line-left d-none d-sm-block"></div>
+                            <div class="line-right d-none d-sm-block"></div>
+                    </div>
+                </div>
+          </nav>
+          <div class="banner-items position-relative">
+            <div class="box-banner-text position-relative z-1">
+                <h1 class="banner-title">South2Sea Help</h1>
+                <p class="banner-text d-sm-block d-none">ทุกๆปัญหาของคุณ เราพร้อมเเก้ไขเพียง search เเละ  click</p>
+                <p class="banner-text d-sm-none">ทุกๆปัญหาของคุณ เราพร้อมเเก้ไขเพียง<br> search เเละ  click</p>
+            </div>
+            <div class="d-flex box-input position-relative z-1">
+                <div class="d-sm-block d-none">
+                    <i class="fi fi-rr-search position-absolute"></i><input type="text" class="banner-btn" placeholder="ใส่คีย์เวิดท์ปัญหาของคุณเช่น : สะสมเเต้ม ">
+                </div>
+                <div class="d-sm-none justify-content-center m-auto">
+                    <i class="fi fi-rr-search position-absolute"></i><input type="text" class="banner-btn" placeholder="ใส่คีย์เวิดท์ปัญหาของคุณ">
+                </div>
+            </div>
+            <img src="picture/contact/pic-banner.png " alt="" class="position-absolute z-0">
+          </div>
+    </header>
+
+    <section class="all position-relative z-1">
+            <!-- faq -->
+        <section class="faqs position-relative">
+            <!-- desktop -->
+            <div class="d-sm-block d-none">
+                <h1 class="titleFAQs mb-4">FAQs</h1>
+                <div class="container">
+                    <div class="row justify-content-center g-0">
+                        <div class="col-2 text-center">
+                            <button class="faq-box-head" value="1">
+                                <i class="fi fi-rr-bus-alt"></i><br><p>ทัวร์</p>
+                            </button>
+                        </div>
+                        <div class="col-2 text-center">
+                            <button class="faq-box-head ant-bg" value="2">
+                                <i class="fi fi-rr-user"></i><br><p>สมาชิก</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="fetchFAQs">
+                            <div class="faq-main pe-5 ps-5 pt-5">
+                                <div class="container pe-5 ps-5">
+                                    <div class="row">
+                                        <div class="col-12 mb-5">
+                                            <h2 class="faq-title">การจอง</h2>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันจะจองทัวร์ได้อย่างไร?</div>
+                                            <div class="faq-content mb-3" id="faq-booking">
+                                                "เพื่อจองทัวร์ได้อย่างง่าย คุณสามารถทำตามขั้นตอนต่อไปนี้:<br>
+                                                1.เข้าสู่เว็บไซต์หรือแอปพลิเคชันที่เกี่ยวข้องกับทัวร์ที่คุณสนใจ.<br>
+                                                2.ค้นหาทัวร์ที่คุณต้องการจอง.<br>
+                                                3.เลือกวันที่และเวลาที่คุณต้องการ.<br>
+                                                4.กรอกข้อมูลการจองและข้อมูลการติดต่อ.<br>
+                                                5.เลือกวิธีการชำระเงินและป้อนข้อมูลการชำระเงิน.<br>
+                                                6.ตรวจสอบข้อมูลการจองอีกครั้งและกดปุ่ม 'ยืนยันการจอง'.<br>
+                                                7.รอรับอีเมลยืนยันการจองและรายละเอียดเพิ่มเติมเกี่ยวกับทัวร์ของคุณ.<br>
+                                            </div>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันสามารถเลือกทัวร์ที่ตรงกับงบประมาณของฉันได้อย่างไร?</div>
+                                            <div class="faq-content mb-3" id="faq-booking">
+                                                ท่านสามารถกำหนดเกณฑ์ราคาเองได้ในขั้นตอนค้นหา
+                                            </div>
+                                            <div class="boxfaq d-flex align-items-center">ฉันสามารถยกเลิกหรือเปลี่ยนแปลงการจองทัวร์ได้อย่างไร?</div>
+                                            <div class="faq-content mt-3" id="faq-booking">
+                                                ติดต่อบริษัททัวร์หรือผู้จัดทัวร์: หากคุณต้องการยกเลิกหรือเปลี่ยนแปลงการจอง, ติดต่อบริษัททัวร์หรือผู้จัดทัวร์โดยใช้ข้อมูลติดต่อที่ระบุในเว็บไซต์หรือแอปพลิเคชัน.
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-5">
+                                            <h2 class="faq-title">คิวทัวร์</h2>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">มีข้อดีในการจองคิวทัวร์ล่วงหน้าอย่างไร?</div>
+                                            <div class="faq-content mb-3" id="faq-booking">
+                                                หาราคาที่ดี: บางครั้งการจองล่วงหน้าอาจช่วยให้คุณได้รับข้อเสนอและส่วนลดที่ดีกว่า เนื่องจากบริษัททัวร์อาจมีโปรโมชั่นหรือส่วนลดสำหรับการจองล่วงหน้า.<br>
+                                                รองรับที่นั่งหรือสิทธิ์พิเศษ: การจองล่วงหน้าช่วยให้คุณสามารถเลือกที่นั่งหรือสิทธิ์พิเศษที่คุณต้องการ เช่น ที่นั่งติดหน้า, ที่นั่งพิเศษ, หรือกิจกรรมพิเศษเป็นต้น.<br>
+                                                ควบคุมเวลาตัวเอง: คุณสามารถจัดการเวลาของตัวเองและการวางแผนการเดินทางได้อย่างคุ้มค่า.
+                                            </div>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันสามารถยกเลิกคิวทัวร์หรือเปลี่ยนเวลาคิวได้อย่างไร?</div>
+                                            <div class="faq-content mb-3" id="faq-booking">
+                                                ข้อกำหนดและเงื่อนไขขึ้นอยู่กับโปรโมชั่นนั้นๆ
+                                            </div>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันจะต้องรอนานเท่าไหร่ก่อนที่จะเข้าคิวทัวร์?</div>
+                                            <div class="faq-content mb-3" id="faq-booking">
+                                                ข้อกำหนดและเงื่อนไขขึ้นอยู่กับโปรโมชั่นนั้นๆ
+                                            </div>
+                                            <div class="boxfaq d-flex align-items-center">มีคิวทัวร์แบบกลุ่มหรือคิวทัวร์ส่วนตัวให้เลือก?</div>
+                                            <div class="faq-content mt-3" id="faq-booking">
+                                                แน่นอนว่าเรามีทัวร์ให้เลือกทั้งแบบกลุ่ม รวมถึงการจองคิวแบบส่วนตัวให้ท่านเลือกอย่างแน่นอน
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-5">
+                                            <h2 class="faq-title">ข้อเสนอสุดพิเศษ</h2>
+                                            <div class="boxfaq mb-3 d-flex align-items-center">มีเงื่อนไขหรือข้อกำหนดเฉพาะที่ต้องปฏิบัติตามในการใช้ข้อเสนอพิเศษหรือไม่?</div>
+                                            <div class="faq-content" id="faq-booking">
+                                                ข้อกำหนดและเงื่อนไขขึ้นอยู่กับโปรโมชั่นนั้นๆ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="d-sm-none">
+                <div class="titleFAQs">FAQs</div>
+                <div class="container">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <div class="faq-box-head">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fi fi-rr-bus-alt"></i><p>ทัวร์</p>
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="faq-box-head ant-bg">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fi fi-rr-user"></i><br><p>สมาชิก</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid pt-5">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <h2 class="faq-title">การจอง</h2>
+                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันจะจองทัวร์ได้อย่างไร?</div>
+                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันสามารถเลือกทัวร์ที่ตรงกับงบประมาณของฉันได้อย่างไร?</div>
+                            <div class="boxfaq d-flex align-items-center">ฉันสามารถยกเลิกหรือเปลี่ยนแปลงการจองทัวร์ได้อย่างไร?</div>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <h2 class="faq-title">คิวทัวร์</h2>
+                            <div class="boxfaq mb-3 d-flex align-items-center">มีข้อดีในการจองคิวทัวร์ล่วงหน้าอย่างไร?</div>
+                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันสามารถยกเลิกคิวทัวร์หรือเปลี่ยนเวลาคิวได้อย่างไร?</div>
+                            <div class="boxfaq mb-3 d-flex align-items-center">ฉันจะต้องรอนานเท่าไหร่ก่อนที่จะเข้าคิวทัวร์?</div>
+                            <div class="boxfaq d-flex align-items-center">มีคิวทัวร์แบบกลุ่มหรือคิวทัวร์ส่วนตัวให้เลือก?</div>
+                        </div>
+                        <div class="col-12 mb-5">
+                            <h2 class="faq-title">ข้อเสนอสุดพิเศษ</h2>
+                            <div class="boxfaq mb-3 d-flex align-items-center">มีเงื่อนไขหรือข้อกำหนดเฉพาะที่ต้องปฏิบัติตามในการ.....</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <div class="contact-box pt-3">
+                            <h1 class="contact-title text-center text-white">เกี่ยวกับเรา</h1>
+                            <p class="contact-text text-white">เว็บไซต์แนะนำสถานที่ท่องเที่ยวในภาคใต้ที่ให้ความรู้เกี่ยวกับสถานที่และแนะนำที่พักใกล้ๆสถานที่นั้นๆพร้อมกับฟังก์ชั่นจัดทัวร์ท่องเที่ยวที่สามารถนำนักท่องเที่ยวไปเข้าถึงธรรมชาติและสิ่งแวดล้อมตามสถานที่ต่างๆและยังแนะนำสถานที่ท่องเที่ยวที่เหมาะกับฤดูการนั้นๆอีกด้วย</p>
+                            <div class="d-flex justify-content-center">
+                                <img src="picture/feature/logo.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <div class="contact-box ct-bg pt-3">
+                            <h1 class="contact-title text-center">ติดต่อเรา</h1>
+                            <div class="container">
+                                <div class="row gy-3 gx-2">
+                                    <div class="col-6">
+                                        <input type="text" name="" id="" class="ct-input" placeholder="First Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" name="" id="" class="ct-input" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="email" name="" id="" class="ct-input" placeholder="E-mail">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" name="" id="" class="ct-input" placeholder="Tel.">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="" id="" class="ct-input-lg" >Write your text here.....</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="ct-detail">
+                            <div class="text-center detail-box">
+                                <i class="fi fi-rr-headset"></i>
+                                <h2 class="detail-title">เเชทกับเรา</h2>
+                                <p class="detail-text">คุยกับเราผ่านเเชทเพื่อเเก้ปัญหาของคุณหากคุณ
+                                    ต้องการคุยกับเราโดยการพูดคุยผ่านเเชทกับเจ้าหน้าที่หรือคุยกับบอทคุณสามารถกดคุยได้ที่นี้</p>
+                            </div>
+                            <div class="detail-bt text-center">
+                                <button class="detail-btn">SHOW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="ct-detail detail-bg1">
+                            <div class="text-center detail-box">
+                                <i class="fi fi-rr-phone-flip"></i>
+                                <h2 class="detail-title">โทรหาเรา</h2>
+                                <p class="detail-text">คุยกับเราโดยการโทรเพื่อเข้าใจง่ายขึ้น หากท่านมีปัญหาที่เข้าใจได้ยากต้องการพูดคุยเป็นการส่วนตัวกับเราได้โดยโทรผ่านเบอร์ด้านล่างนี้     </p>
+                            </div>
+                            <div class="detail-bt text-center">
+                                <p class="detail-text">+6638-484-5865</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="ct-detail detail-bg2">
+                            <div class="text-center detail-box">
+                                <i class="fi fi-rr-users"></i>
+                                <h2 class="detail-title">สอบถามชุมชน</h2>
+                                <p class="detail-text">คุยกับสมาชิกด้วยกันเองเเบ่งปันข้อมูลกันเพื่อผลประโยช์นสูงสุดหากท่านต้องการคุยปรึกษากับกลุ่มลูกค้าคนอื่นเราก็มีกลุ่มชุมชนใหญ่ให้เข้าปรึกษากันเองได้</p>
+                            </div>
+                            <div class="detail-bt text-center">
+                                <button class="detail-btn">SHOW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+    
+
+
+    <footer class="position-relative">
+        <div class="footer-logo justify-content-center text-center d-none d-sm-block">
+            <img src="picture/footer-logo.png" class="ft-logo">
+        </div>
+        <div class="booking d-none d-sm-block">
+            <p class="ft-title">BOOKING</p>
+            <p class="ft-text">Destination</p>
+            <p class="ft-text">Exclusive</p>
+            <p class="ft-text">Recommended</p>
+        </div>
+
+        <div class="service-online position-absolute d-none d-sm-block">
+            <p class="ft">บริการออนไลน์</p>
+            <p class="ft-text">About us</p>
+            <p class="ft-text">FAQ</p>
+            <p class="ft-text">Contact</p>
+            <p class="ft-text">Privacy Policy</p>
+            <p class="ft-text">Cookie management</p>
+        </div>
+
+        <div class="ft-search position-absolute d-none d-sm-block">
+            <p class="ft-title mb-3">SEARCH</p>
+            <div class="d-flex box mb-4">
+                <input type="text" class="input-ft" placeholder="What are you looking for?">
+                <i class="fi fi-rr-search"></i>
+            </div>
+            <p class="ft-title mb-3">LANGUAGE</p>
+            <div class="d-flex box">
+                <select class="input-select">
+                    <option>Thai</option>
+                    <option>English</option>
+                    <option>中国</option>
+                    <option>भारत</option>
+                </select>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="d-none d-sm-block">
+            <div class="ft-ft d-flex justify-content-between">
+                <p class="footer-text"><i class="fi fi-rr-globe" style="margin-top: 5px;"></i> South2sea.com</p>
+                <div class="ft-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <!-- mobile -->
+        <div class="d-sm-none">
+            <img src="./picture/footer-logo.png" class="footer-logo" alt="" srcset="">
+            <div class="ft-search">
+                <p class="ft-title mb-1">SEARCH</p>
+                <div class="d-flex box mb-3">
+                    <input type="text" class="input-ft" placeholder="What are you looking for?">
+                    <i class="fi fi-rr-search"></i>
+                </div>
+                <p class="ft-title mb-1">LANGUAGE</p>
+                <select class="input-select mb-3">
+                        <option>Thai</option>
+                        <option>English</option>
+                        <option>中国</option>
+                        <option>भारत</option>
+                </select>
+
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fa-solid fa-circle-plus"></i> Booking</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fi fi-rr-marker"></i> Locations</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="d-flex position-relative select-text">
+                    <p class="drop-text align-middle"><i class="fi fi-rr-book-user"></i> About us</p>
+                    <i class="fa-solid fa-chevron-down position-absolute"></i>
+                </div>
+                <div class="ft-icon d-flex justify-content-center">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+                <p style="font-size: 9px; margin-top: 13px;"><i class="fa-regular fa-copyright"></i> <span style="font-size: 6px;">South2sea.com</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<script>
+
+    const faqElements = document.querySelectorAll('.boxfaq');
+    faqElements.forEach(function(faqElement, index) {
+    const faqContent = document.querySelectorAll('.faq-content')[index];
+
+    faqElement.addEventListener('click', function() {
+        if (faqContent.style.display === 'block') {
+        faqContent.style.display = 'none';
+        } else {
+        faqContent.style.display = 'block';
+        }
+    });
+});
+</script>
+</html>

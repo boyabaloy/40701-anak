@@ -1,0 +1,1110 @@
+@font-face {
+    font-family: 'Arial-Rounded-MT'; /* Give your font a name */
+    src: url('fonts/Arial-Rounded-MT.Ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Arial-Rounded-MT-Bold'; /* Give your font a name */
+    src: url('fonts/ARLRDBD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit'; /* Give your font a name */
+    src: url('fonts/Kanit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'kanit',sans-serif;
+}
+
+
+
+.hero-banner{
+    position: relative;
+    background: url('../picture/home/banner.png'), lightgray 50% / cover no-repeat;
+    max-width: 100%;
+    height: 51.25rem;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* nav */
+.navbar{
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+.nav-link{
+    color: #071952;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: #088395;
+    transition: 0.5s;
+}
+
+.active-link{
+    color: #088395;
+}
+
+.nav-link i{
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 8rem;
+}
+
+.navbar-nav .nav-item-end{
+    margin-right: 0;
+}
+
+.icon .nav-item{
+    margin-right: 2rem;
+}
+
+.navbar-nav .nav-logo{
+    margin-top: -3rem;
+    margin-left: 2.4rem;
+}
+
+.nav-item .nav-link .logo{
+    width: 292px;
+    height: 206px;
+}
+
+.navbar-brand .logo{
+    width: 165px;
+    height: 116px;
+    margin-left: -2rem;
+}
+
+.line-left{
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 49.4rem;
+    height: 2px;
+    background: #071952;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.line-right{
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: 57rem;
+    height: 2px;
+    background: #071952;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-menu .fi-rr-menu-burger{
+    font-size: 1.5rem;
+    color: #071952;
+}
+
+.btn-search {
+    font-size: 1.5rem;
+    color: #071952;
+    margin-right: -6rem;
+}
+/* end-nav */
+
+
+.banner-title{
+    font-family: 'kanit',sans-serif;
+    max-width: 100%;
+    font-size: 2rem;
+    margin-top: 13rem; 
+}
+
+.banner-text{
+    max-width: 100%;
+}
+
+.hero-banner .button{
+    margin-right: 2.5rem;
+}
+
+.hero-banner .button .btn-success{
+    font-size: 1rem;
+    width: 117px;
+    height: 34px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    background-color: #088395;
+    transition: 0.5s;
+    border: none;
+}
+
+.hero-banner .button .btn-success:hover{
+    background-color: #106370;
+    transition: 0.5s;
+}
+
+.season{
+    max-width: 100%;
+    height: 68rem;
+    background-image: url('../picture/home/section-visit.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+}
+
+.season .season-sub{
+    margin-top: 10rem;
+    font-size: 28px;
+}
+
+.season .season-title{
+    margin-top: 1rem;
+    font-size: 40px;
+}
+
+.season-more{
+    margin: 1.5rem 0 3rem 0;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 20px;
+}
+
+.season-more .btn-success{
+    background-color: #7FBCC3;
+    width: 169px;
+    height: 49px;
+    border: none;
+    transition: 0.5s;
+}
+
+.season-more .btn-success:hover{
+    background-color: #498f97;
+    transition: 0.5s;
+}
+
+.season .card{
+    max-width: 100%;
+    height: 465px; 
+    border-radius: 2rem;
+}
+
+.season .card .card-img-top{
+    border-radius: 2rem 2rem 0 0; 
+    height: 316px;
+}
+
+.season .card-title{
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 24px;
+}
+
+.season .card-text{
+    font-family: 'kanit', sans-serif;
+    font-size: 14px;
+}
+
+.season .card-body .text-more{
+    font-family: 'kanit', sans-serif;
+    font-size: 8px;
+    bottom:0;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.season-recommend{
+    max-width: 100%;
+    height: 44.56rem;
+    background-color: #99D6D4;
+    color: #071952;
+}
+
+.season-recommend .container-fluid .row .pic{
+    background-image: url('../picture/home/railay.jpg');
+    height: 44.56rem;
+    width: 588px;
+    background-size: cover;
+    background-position: center;
+}
+.season-recommend .container-fluid .row .text{
+    padding-left: 5rem;
+}
+.season-recommend .container-fluid .row .text .text-sub{
+    margin-top: 5rem;
+    font-family: 'kanit', sans-serif;
+    font-size: 22px;
+}
+.season-recommend .container-fluid .row .text .text-title{
+    margin-top: 0.5rem;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 40px;
+}
+.season-recommend .container-fluid .row .text .ss-text{
+    margin-top: 0.5rem;
+    font-family: 'kanit', sans-serif;
+    font-size: 16px;
+}
+
+.ssr-icon{
+    font-size: 52px;
+}
+
+.ssr-title{
+    font-family: 'kanit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ssr-discrip{
+    margin-left: 1px;
+    font-family: 'kanit', sans-serif;
+    font-size: 12px;
+}
+
+.btn-ssr{
+    margin-top: 2rem;
+    width: 169px;
+    height: 49px;
+    background-color: #071952;
+    color: #fff;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    border: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.season-recommend .container-fluid .row .text .btn-success:hover{
+    background-color: #2a3d7a;
+    transition: 0.5s;
+}
+
+/* all */
+.all{
+    max-width: 100%;
+    height: 200.75rem;
+    background-image: url('../picture/home/bg-all.png');
+    background-position: 50% 78%;
+    background-size: cover;
+}
+
+
+/* category */
+.category{
+    max-width: 100%;
+    height: 58.87rem;
+    overflow: hidden;
+}
+.category-title{
+    margin: 13rem 0 6rem 95px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 48px;
+    color: #071952;
+}
+
+.circle{
+    width: 152px;
+    height: 152px;
+    background-color: #071952;
+    border-radius: 50%;
+    border: none;
+}
+
+.circle i {
+    color: #fff;
+    text-align: center;
+}
+
+.circle-title{
+    margin-top: 1.5rem;
+    font-family: 'kanit', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071952;
+}
+
+.circle-text{
+    margin-top: -16px;
+    font-family: 'kanit', sans-serif;
+    font-size: 14px;
+}
+
+.deal{
+    max-width: 100%;
+    height: 409px;
+    background-color: #071952;
+}
+.tag{
+    width: 90px; 
+    height: 90px; 
+    margin-top: 80px;
+}
+.excusive-deal{
+    max-width: 100%;
+    text-align: center;
+}
+
+.excusive-title{
+    margin-top: 90px;
+    margin-left: 40px;
+    font-size: 64px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    color: #fff;
+}
+.excusive-text{
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'kanit', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.excusive-btn{
+    margin-top: 1rem;
+    width: 169px;
+    height: 49px;
+    background-color: #7FBCC3;
+    transition: 0.5s;
+    border: none;
+}
+
+.button-excusive .btn-success:hover{
+    background-color: #397880;
+    transition: 0.5s;
+}
+
+.man{
+    top: -307px;
+    left: -100px;
+    width: 631px; 
+    height: 892px;
+}
+.woman{
+    top: -290px;
+    right: 0px;
+    width: 650px; 
+    height: 920px;
+}
+
+
+/* near you */
+.near-you{
+    margin-top: 100px;
+    width: 100%;
+    height: 546px;
+}
+
+.title-near{
+    margin-left: 100px;
+    color: #071952;
+}
+
+.near-scroll{
+    width: 100%;
+    height: 420px;
+    margin-top: 30px;
+    padding: 0 50px;
+    overflow-x: scroll;
+}
+
+.near-scroll::-webkit-scrollbar {
+    width: 811px;
+    height: 12px;
+}
+.near-scroll::-webkit-scrollbar-track {
+    background-color: #7FBCC3;
+    border-radius: 100px;
+  }
+.near-scroll::-webkit-scrollbar-thumb{
+    background-color: #071952;
+    border-radius: 100px;
+}
+.near-scroll::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(33, 51, 110);
+}
+
+.near-scroll .card{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    width: 640px;
+    height: 299px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+.near-scroll .card .img-card img{
+    width: 264px;
+    height: 261px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin: 17px 0 0 20px;
+}
+
+.card-detail{
+    padding: 1.4rem 0 0 7rem;
+}
+
+.text-type{
+    font-family: 'kanit', sans-serif;
+    font-size: 20px;
+    color: #071952;
+}
+.text-name{
+    margin-top: -1rem;
+    font-family: 'kanit', sans-serif;
+    font-size: 24px;
+    color: #071952;
+    line-height: 1.5;
+}
+.function{
+    margin-top: -1rem;
+    font-family: 'kanit', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.function i{
+    font-size: 25px;
+}
+
+.function .function-text{
+    top: 4.5px;
+    left: 3.5rem;
+}
+
+.func-price{
+    font-family: 'kanit', sans-serif;
+    font-size: 24px;
+    left: 7rem;
+    bottom: 0;
+}
+
+.func-btn{
+    width: 117px;
+    height: 35px;
+    border: none;
+    background-color: #071952;
+    right: 1.5rem;
+    bottom: 7px;
+    color: #fff;
+    font-family: 'kanit', sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.func-btn:hover{
+    background-color: rgb(33, 51, 110);
+    transition: 0.5s;
+}
+
+.func-distance{
+    font-family: 'kanit', sans-serif;
+    top: 1.4rem;
+    right: 2rem;
+    color: #7FBCC3;
+    font-size: 20px;
+}
+
+.filter-near{
+    width: 70px;
+    height: 26px;
+    top: 5px;
+    right: 1rem;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 12px;
+    border: none;
+    background-color: #071952;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.filter-near:hover{
+    background-color: rgb(33, 51, 110);
+    transition: 0.5s;
+}
+/*Interesting*/
+.interesting{
+    font-family:'Arial-Rounded-MT-Bold', sans-serif;
+    color: #071952;
+    padding-left: 100px;    
+    margin-bottom: 3rem;
+}
+
+.content{
+    max-width: 100%;
+    height: 442px;
+    border-radius: 52px;  
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.content-sm{
+    max-width: 100%;
+    height: 290px;
+    border-radius: 52px;  
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.content-pic1{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 442px;
+    border-radius: 52px;
+    background-image: url('../picture/home/5ec2d81dca4a2571f178de2d.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    
+}
+.content-pic2{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 442px;
+    border-radius: 52px;
+    background-image: url(../picture/home/artur-kornakov-5kpVwpDW0WY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+.content-pic3{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 442px;
+    border-radius: 52px;
+    background-image: url(../picture/home/notto-suthipat-29hAgcjZMfs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.content-sm-pic1{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    border-radius: 52px;
+    background-image: url(../picture/home/notto-suthipat-29hAgcjZMfs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+.content-sm-pic2{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    border-radius: 52px;
+    background-image: url(../picture/home/pascal-debrunner-X4Lj9LB5XAI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+.content-sm-pic3 {
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 290px;
+    border-radius: 52px;
+    background-image: url(../picture/home/promthep-cape-viewpoint-sunset-phuket-thailand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+
+.content-sm-text .title{
+    color: white;
+    font-family:'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 24px;
+    margin-top: 180px;
+}
+.content-sm-text .text{
+    color: white;
+    font-family:'kanit', sans-serif;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.content-text .title{
+    color: white;
+    font-family:'Arial-Rounded-MT-Bold', sans-serif;
+    font-size: 24px;
+    margin-top: 325px;
+}
+.content-text .text{
+    color: white;
+    font-family:'kanit', sans-serif;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.btn-more{
+    width: 160px;
+    height: 40px;
+    font-family: 'kanit', sans-serif;
+    font-size: 16px;
+    color:#fff;
+    background-color: #071952;
+    border: none;
+    transition: 0.5s;
+    margin-top: 4rem;
+}
+.btn-more:hover{
+    background-color: rgb(33, 51, 110);
+    transition: 0.5s;
+}
+
+/*SEARCHING*/
+.searching{
+    max-width: 100%;
+    height: 45.5rem;
+    background-image: url(../picture/home/CAR-OPACITY-DONE.png);
+    background-size: cover;
+    background-position: 25% 100%;
+    overflow: hidden;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+}
+.searching h1{
+    text-align: center;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+    color: #071952;
+    font-size: 48px;
+    padding-top: 12rem;
+}
+.searching input{
+    width: 834px;
+    height: 72px;
+    background-color: #071952;
+    border-radius: 72px;
+    border: none;
+    outline: none;
+    padding-left: 2rem;
+    color: #FFF;
+    margin-top: 2rem;
+}
+.search-bar i{
+    color: #FFF;
+    font-size: 2rem;
+    position: absolute;
+    top: 3rem;
+    right: 35rem;
+    cursor: pointer;
+
+}
+/* FOOTER */
+footer{
+    max-width: 100%;
+    height: 36.81rem;
+    background-color: #071952;
+    color: #fff;
+    padding: 0 110px;
+}
+
+.footer-logo .ft-logo{
+    width: 30.31rem ;
+    height: 21.44rem;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.booking{
+    margin-top: -80px;
+}
+
+.ft-title{
+    font-size: 15px;
+    font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+}
+
+.ft-text{
+    font-size: 15px;
+    font-family: 'kanit', sans-serif;
+    cursor: pointer;
+}
+
+.service-online{
+    top: 227px;
+    left: 400px;
+}
+
+.ft-line{
+    width: 338px;
+    height: 1px;
+    background-color: #ababab;
+}
+
+.ft-search{
+    top: 227px;
+    right: 110px;
+}
+
+.input-ft{
+    width: 336px;
+    height: 29px;
+    background-color: #071952;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'kanit', sans-serif;
+    color: white;
+}
+
+.input-select{
+    width: 336px;
+    height: 29px;
+    background-color: #071952;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: 'kanit', sans-serif;
+    color: #848484;
+}
+
+.box i{
+    margin-left: -25px;
+}
+
+.ft-ft{
+    height: 99px;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 2.5rem 0;
+}
+
+.ft-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    .nav-link{
+        color: white;
+    }
+    .hero-banner {
+      height: 41.02rem;
+    }
+    .navbar{
+        margin-top: 10px;
+    }
+    .banner-title{
+        font-size: 20px;
+        margin-top: 16rem;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+    .hero-banner .button{
+        margin-left: 1rem;
+    }
+    .season{
+        height: 45.37rem;
+    }
+    .season .season-sub{
+        margin-top: 2rem;
+    }
+    .season .card{
+        margin-left: 3.2rem;
+        width: 288px;
+        height: 21.81rem;
+    }
+    .season .card-title{
+        font-size: 16px;
+    }
+    
+    .season .card-text{
+        font-size: 10px;
+    }
+    .season .card-body .text-more{
+        bottom: 1rem;
+    }
+
+    .season-recommend{
+        height: 40rem;
+    }
+    .season-recommend .container-fluid .row .pic{
+        height: 25.18rem;
+        width: 100%px;
+        background-size: cover;
+        background-position: center;
+    }
+    .season-recommend .container-fluid .row .text{
+        padding-left: 0;
+    }
+
+    .season-recommend .container-fluid .row .pic .text-sub{
+        margin-top: 13rem;
+        font-family: 'kanit', sans-serif;
+        font-size: 12px;
+    }
+    .season-recommend .container-fluid .row .pic .text-title{
+        margin-top: -10px;
+        font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+        font-size: 24px;
+    }
+    .season-recommend .container-fluid .row .pic .ss-text{
+        margin-top: -10px;
+        font-family: 'kanit', sans-serif;
+        font-size: 10px;
+    }
+
+    .ssr-icon{
+        font-size: 26px;
+    }
+    .ssr-title{
+        font-size: 15px;
+    }
+    .ssr-discrip{
+        font-size: 8px;
+    }
+
+    .btn-ssr{
+        margin-top: 0.5rem;
+        width: 104px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .button .btn-success:hover{
+        background-color: #2a3d7a;
+        transition: 0.5s;
+    }
+    .category{
+        height: 22.87rem;
+    }
+    .category-title{
+        margin: 14px 0 1rem 3rem;
+        font-size: 24px;
+        color: #071952;
+    }
+    .all{
+        background-image: url('../picture/home/bg-sm-all.png');
+        background-position: 50% 100%;
+        height: 195rem;
+    }
+    .circle{
+        width: 49px;
+        height: 49px;
+        margin-left: 1.8rem;
+    }
+    .circle-title{
+        margin-top: 1rem;
+        font-family: 'kanit', sans-serif;
+        font-size: 12px;
+    }
+    
+    .circle-text{
+        margin-top: -25px;
+        font-family: 'kanit', sans-serif;
+        font-size: 6px;
+    }
+    .deal{
+        height: 167px;
+    }
+    .tag{
+        width: 32px; 
+        height: 32px; 
+        margin-top: 40px;
+    }
+    .excusive-title{
+        margin-top: 45px;
+        margin-left: 15px;
+        font-size: 20px;
+        font-family: 'Arial-Rounded-MT-Bold', sans-serif;
+        color: #fff;
+    }
+    .excusive-text{
+        margin-top: 5px;
+        font-size: 9px;
+    }
+    
+    .excusive-btn{
+        margin-top: 3px;
+        width: 104px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .man{
+        width: 229px;
+        height: 323px;
+        top: -92.5px;
+        left: -50px;
+    }
+    .woman{
+        width: 250px;
+        height: 353px;
+        top: -101.5px;
+        right: -70px;
+    }
+    .near-you{
+        margin-top: 40px;
+        height: 91.62rem;
+    }
+    .title-near{
+        margin-left: 10px;
+        text-align: left;
+        font-size: 24px;
+    }
+    .func-row .card{
+        width: 340px;
+        height: 600px;
+        border-radius: 30px;
+        padding: 15px 30px 0 15px;
+        margin-bottom: 20px;
+    }
+    .func-row .card img{
+        width: 306.1px;
+        height: 304px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .text-type{
+        font-size: 15px;
+    }
+    .text-name{
+        font-size: 20px;
+    }
+    .func-price{
+        font-size: 16px;
+        text-align: center;
+        bottom: 50px;
+    }
+    .func-btn{
+        bottom: 10px;
+        right: 110px;
+    }
+    .func-distance{
+        font-size: 16px;
+        top: 330px;
+    }
+    .btn-more{
+        width: 160px;
+        height: 40px;
+        font-family: 'kanit', sans-serif;
+        font-size: 16px;
+        color:#fff;
+        background-color: #071952;
+        border: none;
+        transition: 0.5s;
+    }
+    .btn-more:hover{
+        background-color: rgb(33, 51, 110);
+        transition: 0.5s;
+    }
+    .content{
+        height: 221px;
+    }
+    .interesting{
+        padding-left: 25px;
+        font-size: 24px;
+    }
+    .content-pic1{
+        height: 221px;
+        padding-left: 30px;
+    }
+    .content-pic2{
+        height: 221px;
+        padding-left: 30px;
+    }
+    .content-pic3{
+        height: 221px;
+        padding-left: 30px;
+    }
+    .content-text .title{
+        font-size: 16px;
+        margin-top: 140px;
+    }
+    .content-text .text{
+        font-size: 10px;
+        margin-top: -15px;
+    }
+    .searching{
+        height: 382px;
+    }
+    .searching h1{
+        font-size: 24px;
+        padding-top: 6rem;
+    }
+    .search-bar input{
+        width: 270px;
+        height: 37px;
+        font-size: 10px;
+    }
+    .search-bar i{
+        font-size: 16px;
+        top: 40px;
+        right: 5rem;
+    }
+    footer{
+        height: 450px;
+        padding: 0 2rem;
+    }
+    .footer-logo{
+        width: 252px;
+        height: 178px;
+        margin-top: -8rem;
+        margin-left: -2rem;
+    }
+    .ft-search{
+        margin-top: -3rem;
+    }
+    .input-select{
+        width: 100%;
+        height: 24px;
+    }
+    .input-ft{
+        width: 100%;
+        height: 24px;
+    }
+    .drop-text{
+        width: 100%;
+        height: 24px;
+        border-bottom: 1px solid white;
+        font-size: 12px;
+    }
+    .select-text{
+        cursor: pointer;
+    }
+    .select-text i{
+        font-size: 10px;
+        right: 4px;
+        top: 4px;
+    }
+    .ft-icon{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid white;
+    }
+    .ft-icon i{
+        margin-top: 7px;
+    }
+    .ft-icon .fa-facebook{
+        margin-right: 1rem;
+    }
+    .ft-icon .fa-instagram{
+        margin-right: 1rem;
+    }
+    .ft-icon .fa-youtube{
+        margin-right: 1rem;
+    }
+  }
